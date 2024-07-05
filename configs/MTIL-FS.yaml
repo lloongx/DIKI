@@ -1,0 +1,29 @@
+dataset_root: "../Datasets/"
+model_backbone_name: 'ViT-B/16'
+input_size: (224, 224)
+scenario: "domain-task"
+dataset: "MTIL"
+num_shots: 16
+seed: 42
+use_validation: True
+load_file: ""
+eval_only: False
+
+train_one_dataset: -1  # only train model on one dataset of MTIL
+zero_shot: False  # only perform zero-shot evaluation, splease specify `load_file`
+MTIL_order_2: False
+
+DIKI:
+  prompt_depth_vision: 8
+  prompt_depth_text: 8
+  n_ctx_vision: 8
+  n_ctx_text: 8
+  batchwise_prompt: True
+  optim:
+    batch_size: 128
+    name: "SGD"
+    lr: 5.0
+    max_epoch: 10
+    weight_decay: 0
+    lr_scheduler: "cosine"
+    warmup_epoch: 0
