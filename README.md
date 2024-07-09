@@ -1,6 +1,6 @@
 # [ECCV 2024] Mind the Interference: Retaining Pre-trained Knowledge in Parameter Efficient Continual Learning of Vision-Language Models
 
-Official implementation of our ECCV 2024 paper "Mind the Interference: Retaining Pre-trained Knowledge in Parameter Efficient Continual Learning of Vision-Language Models".
+Official implementation of our ECCV 2024 paper [Mind the Interference: Retaining Pre-trained Knowledge in Parameter Efficient Continual Learning of Vision-Language Models](https://arxiv.org/abs/2407.05342).
 
 
 
@@ -54,7 +54,14 @@ python main.py --config-path configs/MTIL.yaml
 
 ## Citation
 
-TODO
+```
+@article{tang2024mind,
+  title={Mind the Interference: Retaining Pre-trained Knowledge in Parameter Efficient Continual Learning of Vision-Language Models}, 
+  author={Tang, Longxiang and Tian, Zhuotao and Li, Kai and He, Chunming and Zhou, Hantao and Zhao, Hengshuang and Li, Xiu and Jia, Jiaya},
+  journal={arXiv preprint arXiv:2407.05342},
+  year={2024}
+}
+```
 
 
 ## Contact
